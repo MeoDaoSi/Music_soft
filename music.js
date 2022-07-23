@@ -27,12 +27,15 @@ const progress = $('.progress-area .progress');
 const timeCurrent = $('.song-timer .current');
 const timeDuration = $('.song-timer .duration');
 const repeatBtn = $('.repeat');
-
+const volBtn = $('.vol');
+const volBarRange = $('.volume-bar__range');
 
 app = {
     currentIndex: 0,
     isPlaying: false,
     isRepeat: false,
+    isLove: false,
+    isVolume: false,
     songs: [
         {
             name: "Look What You Made Me Do",
@@ -83,7 +86,7 @@ app = {
 
     renderMusic() {
         const htmls = this.songs.map((song, index) => {
-            return `<div class="song">
+            return `<div class="song ${index === this.currentIndex ? 'playing' : ''}" data-index='${index}' >
                         <div class="song-info" div-index='${index}'>
                             <img src="${song.image}" alt="" img">
                             <span 
@@ -130,6 +133,7 @@ app = {
             _this.isPlaying = true
             playBtn.classList.add('active');
             cdThumbAnimate.play();
+            _this.loadPlaying();
         }
         audio.onpause = () => {
             _this.isPlaying = false
@@ -157,6 +161,29 @@ app = {
             _this.isRepeat = !_this.isRepeat;
             repeatBtn.classList.toggle('active', _this.isRepeat);
         }
+        volBtn.onclick = function(){
+            _this.isVolume = !_this.isVolume;
+            volBtn.classList.toggle('active',this.isVolume);
+            if ( _this.isVolume ){
+                document.onclick = function(e){
+                    if ( e.target.closest('.volume-bar__range') || e.target.closest('.vol') ){
+                        
+                    }else{
+                        _this.isVolume = false;
+                        volBtn.classList.toggle('active',_this.isVolume);
+                    }
+                    
+                }
+            }
+        }
+        volBarRange.oninput = function(){
+            audio.volume = volBarRange.value / 100;
+            if ( audio.volume == 0 ){
+                volBtn.classList.add('ri-volume-mute-line');
+            }else{
+                volBtn.classList.remove('ri-volume-mute-line');
+            }
+        }
 
         audio.ontimeupdate = function () {
             if (audio.duration) {
@@ -173,7 +200,19 @@ app = {
         progress.oninput = function () {
             audio.currentTime = progress.value * audio.duration / 100;
         }
-
+        playList.onclick = function(e){
+            const songNode = e.target.closest('.song:not(.playing)');
+            if ( songNode || e.target.closest('.love') ){
+                if ( e.target.closest('.love') ){
+                    _this.isLove = !_this.isLove;
+                    e.target.closest('.love').classList.toggle('active',_this.isLove);
+                }else{
+                    _this.currentIndex = songNode.dataset.index*1;
+                    _this.loadCurrentSong();
+                    audio.play();
+                }
+            }
+        }
     },
     setTimeMusic(time) {
         if (time === null) {
@@ -215,6 +254,16 @@ app = {
             this.currentIndex = this.songs.length - 1;
         }
         this.loadCurrentSong();
+    },
+    loadPlaying() {
+        const listSong = $$(".song")
+        listSong.forEach((song, index) => {
+            if (this.currentIndex === index) {
+                $(".song.playing").classList.remove("playing")
+                song.classList.add("playing")
+                return
+            }
+        })
     },
     start() {
 

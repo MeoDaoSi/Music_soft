@@ -351,7 +351,9 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
+.song {
+    cursor: pointer;
+}
 .songs-list__songs::-webkit-scrollbar {
     width: 6px;
   }
@@ -419,10 +421,10 @@ html {
     font-size: 1.3rem;
 }
 
-.song-info__author:hover {
+/* .song-info__author:hover {
     cursor: pointer;
     color: var(--text-cl);
-}
+} */
 
 .song-info__name {
     font-size: 1.3rem;
@@ -624,6 +626,7 @@ i.play, i.pause {
 }
 .repeat {
     cursor: pointer;
+    color: var(--gray-cl);
 }
 .repeat.active {
     color: var(--primary-color);
@@ -684,7 +687,7 @@ i.play, i.pause {
     width: 6px;
     -webkit-appearance: none;
     height: 6px;
-    background: #264bd7;
+    background: var(--primary-color);
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 5px 7px 0 rgb(0 0 0 / 10%);
