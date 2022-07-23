@@ -146,16 +146,16 @@ app = {
             _this.prevSong();
             audio.play();
         }
-        audio.onended = function(){
-            if ( _this.isRepeat ){
+        audio.onended = function () {
+            if (_this.isRepeat) {
                 audio.play();
-            }else{
+            } else {
                 nextBtn.click();
             }
         }
-        repeatBtn.onclick = function(){
+        repeatBtn.onclick = function () {
             _this.isRepeat = !_this.isRepeat;
-            repeatBtn.classList.toggle('active',_this.isRepeat);
+            repeatBtn.classList.toggle('active', _this.isRepeat);
         }
 
         audio.ontimeupdate = function () {
@@ -165,7 +165,7 @@ app = {
             // set time song-timer
             const timeCurrentMusic = Math.floor(audio.currentTime);
             timeCurrent.innerText = _this.setTimeMusic(timeCurrentMusic);
-            
+
             const timeDurationMusic = Math.floor(audio.duration);
             timeDuration.innerText = _this.setTimeMusic(timeDurationMusic);
             // set time song-timer
@@ -176,7 +176,7 @@ app = {
 
     },
     setTimeMusic(time) {
-        if ( time === null ){
+        if (time === null) {
             return '0:00';
         }
         let totalMin = Math.floor(time / 60);
@@ -186,7 +186,7 @@ app = {
         }
         return `${totalMin}:${totalSec}`;
     },
-        getCurrentSong() {
+    getCurrentSong() {
         return this.songs[this.currentIndex];
     },
     loadCurrentSong() {
