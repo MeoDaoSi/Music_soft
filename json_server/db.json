@@ -1,0 +1,60 @@
+{
+  "listMusic": [
+    {
+      "id": 1,
+      "name": "Khúc Cửu Môn Hồi Ức - Đẳng Thập Ma Quân",
+      "author": "辞九门回忆",
+      "image": "https://i1.sndcdn.com/artworks-okGdzJU5zoepc4rV-Wem4BQ-t500x500.jpg",
+      "path": "id_1"
+    },
+    {
+      "id": 2,
+      "name": "I Want You To Know",
+      "author": "Hella x Pegato Remix",
+      "image": "https://avatar-ex-swe.nixcdn.com/song/2017/09/20/d/c/d/0/1505872853038_640.jpg",
+      "path": "id_2"
+    },
+    {
+      "name": "Dusk Till Dawn",
+      "author": "ZAYN ft. Sia",
+      "image": "https://i1.sndcdn.com/artworks-000675552454-mldjm4-t500x500.jpg",
+      "path": "id_3",
+      "id": 3
+    },
+    {
+      "name": "Không có lý do",
+      "author": "Dương Bàn Vũ & Lambert",
+      "image": "https://i1.sndcdn.com/artworks-000642594505-ms9tx1-t500x500.jpg",
+      "path": "id_4",
+      "id": 4
+    },
+    {
+      "name": "Nevada x Boom shakalaka",
+      "author": "苦ferry remix",
+      "image": "https://i1.sndcdn.com/artworks-zqzFEpSrzQBs7yHJ-oLz8Kw-t500x500.jpg",
+      "path": "id_5",
+      "id": 5
+    },
+    {
+      "name": "Despair",
+      "author": "风靡全网的背景",
+      "image": "https://i1.sndcdn.com/avatars-000056054928-7ijgpv-t500x500.jpg",
+      "path": "id_6",
+      "id": 6
+    },
+    {
+      "name": "Faded",
+      "author": "(Jacla remix) - Naxsy Douyin Version",
+      "image": "https://i1.sndcdn.com/artworks-OYLVkyVygb0XZ0rg-poBvJA-t500x500.jpg",
+      "path": "id_7",
+      "id": 7
+    },
+    {
+      "name": "Ngôi sao sáng nhất bầu trời đêm",
+      "author": "夜空中最亮的星",
+      "image": "https://i1.sndcdn.com/artworks-000380164236-beiirx-t500x500.jpg",
+      "path": "id_8",
+      "id": 8
+    }
+  ]
+}
