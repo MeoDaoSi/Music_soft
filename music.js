@@ -39,9 +39,9 @@ app = {
     songs: [
         {
             id: 1,
-            name: "Khúc Cửu Môn Hồi Ức - Đẳng Thập Ma Quân",
-            author: "辞九门回忆",
-            image: "https://i1.sndcdn.com/artworks-okGdzJU5zoepc4rV-Wem4BQ-t500x500.jpg",
+            name: "Tay Trái Chỉ Trăng",
+            author: "Tát Đỉnh Đỉnh",
+            image: "https://i1.sndcdn.com/artworks-000106026773-9p02r9-t500x500.jpg",
             path: "id_1"
         },
         {
@@ -127,7 +127,245 @@ app = {
             image: "https://i1.sndcdn.com/artworks-Qbfg1L3MEZeHpLXa-uELt9Q-t500x500.jpg",
             path: "id_13",
             id: 13
-        }
+        },
+        {
+            name: "Normal No More (remix)",
+            author: "TYSM",
+            image: "https://www.cevirce.com/en/translate/wp-content/uploads/2022/01/tysm-normal-no-more-lyrics-1-1200x1200.jpg",
+            path: "id_14",
+            id: 14
+        },
+        {
+            name: "Summertime Sadness Remix - BTTN Remix",
+            author: "ft. Lana Del Rey",
+            image: "https://i1.sndcdn.com/artworks-OGsWCzxA81lkcy17-nGTz5Q-t500x500.jpg",
+            path: "id_15",
+            id: 15
+        },
+        {
+            name: "La la la - Naughty Boy",
+            author: "ft. Sam Smith",
+            image: "https://i1.sndcdn.com/artworks-GqEzPZ0pi7v0yCHK-UmlBrA-t240x240.jpg",
+            path: "id_16",
+            id: 16
+        },
+        {
+            name: "Alan Walker - All Falls Down",
+            author: "feat. Noah Cyrus & Digital Farm Animals",
+            image: "https://i1.sndcdn.com/artworks-000290815104-d5gvij-t500x500.jpg",
+            path: "id_17",
+            id: 17
+        },
+        {
+            name: "Yami",
+            author: "Tiểu Ái, Dương Kiệt, A Lạp Mai Ft. Nhĩ Mã Na Y",
+            image: "https://avatar-ex-swe.nixcdn.com/song/2020/08/04/4/0/c/9/1596518239688_640.jpg",
+            path: "id_18",
+            id: 18
+        },
+        {
+            name: "Copines",
+            author: "Aya Nakamura",
+            image: "https://i1.sndcdn.com/artworks-Dy6cktJWyiHRGkG3-hKx4HA-t500x500.jpg",
+            path: "id_19",
+            id: 19
+        },
+        {
+            name: "Heat Waves",
+            author: "Glass Animals ( Slowed And Reverb )",
+            image: "https://i1.sndcdn.com/artworks-wWBD46nyrfzhzwDY-wNzu8Q-t240x240.jpg",
+            path: "id_20",
+            id: 20
+        },
+        {
+            name: "Cưới Thôi",
+            author: "Masiu x Masew",
+            image: "https://i1.sndcdn.com/artworks-hbjj5DFw5EOae3FY-gafjEQ-t500x500.jpg",
+            path: "id_21",
+            id: 21
+        },
+        {
+            name: "Holo",
+            author: "Ampyx",
+            image: "https://i1.sndcdn.com/artworks-000205941539-eafdz6-t500x500.jpg",
+            path: "id_22",
+            id: 22
+        },
+        {
+            name: "Safari",
+            author: "Serena | Gritty Remix",
+            image: "https://i1.sndcdn.com/artworks-000427800225-j7ul3j-t500x500.jpg",
+            path: "id_23",
+            id: 23
+        },
+        {
+            name: "Là tự em đa tình",
+            author: "Thiếu Lâm & Thất Tú (Y Xuy Ngũ Nguyệt) - Hồ Dương Lâm",
+            image: "https://i1.sndcdn.com/avatars-000590302836-2idbz1-t240x240.jpg",
+            path: "id_24",
+            id: 24
+        },
+        {
+            name: "Nổi Gió Rồi Violin",
+            author: "『 Shine 』",
+            image: "https://i1.sndcdn.com/artworks-000329073225-498xiq-t500x500.jpg",
+            path: "id_25",
+            id: 25
+        },
+        {
+            name: "Alive Remix",
+            author: "TEDDY X VeiruX",
+            image: "https://i1.sndcdn.com/artworks-NyT0rcU0pSw7MFtm-vcTJAw-t500x500.jpg",
+            path: "id_26",
+            id: 26
+        },
+        {
+            name: "LAST REUNION ",
+            author: "Epic Music VN",
+            image: "https://i1.sndcdn.com/artworks-000126359398-c9oz4i-t500x500.jpg",
+            path: "id_27",
+            id: 27
+        },
+        {
+            name: "Đáy Biển",
+            author: "Nhất Chi Lựu Liên",
+            image: "https://i1.sndcdn.com/artworks-2YygOzts5lM08z8a-01173A-t500x500.jpg",
+            path: "id_28",
+            id: 28
+        },
+        {
+            name: "Let Me Down Slowly",
+            author: "Alec Benjamin",
+            image: "https://i1.sndcdn.com/artworks-000467984463-isiz59-t500x500.jpg",
+            path: "id_29",
+            id: 29
+        },
+        {
+            name: "Look What You Made Me Do",
+            author: "Taylor Swift",
+            image: "https://i1.sndcdn.com/artworks-000290686212-t9dcrb-t500x500.jpg",
+            path: "id_30",
+            id: 30
+        },
+        {
+            name: "Coming for You",
+            author: "SwitchOTR",
+            image: "https://i1.sndcdn.com/artworks-kPds54n50e0SdC9r-cxbWng-t500x500.jpg",
+            path: "id_31",
+            id: 31
+        },
+        {
+            name: "HEY HEY HEY x MOOD ",
+            author: "TVT Remix",
+            image: "https://i1.sndcdn.com/artworks-Xba5vCZhDZyUywIK-pXtiqw-t500x500.jpg",
+            path: "id_32",
+            id: 32
+        },
+        {
+            name: "Dynasty",
+            author: "MIIA",
+            image: "https://i1.sndcdn.com/avatars-T00WpJeWUDyDYLDK-umtBzA-t500x500.jpg",
+            path: "id_33",
+            id: 33
+        },
+        {
+            name: "Dreams II",
+            author: "Lost Sky (ft. Sara Skinner)",
+            image: "https://i1.sndcdn.com/artworks-000463431084-s9wr2o-t500x500.jpg",
+            path: "id_34",
+            id: 34
+        },
+        {
+            name: "Impossible",
+            author: "Shontelle",
+            image: "https://i1.sndcdn.com/artworks-PqVst0lsJyiOEOdH-HVwfMQ-t500x500.jpg",
+            path: "id_35",
+            id: 35
+        },
+        {
+            name: "Unstoppable",
+            author: "Sia",
+            image: "https://i1.sndcdn.com/artworks-000348039945-gymz8a-t500x500.jpg",
+            path: "id_36",
+            id: 36
+        },
+        {
+            name: "The Night",
+            author: "Avicii",
+            image: "https://i1.sndcdn.com/avatars-OmHZ4z6wHHj1PQwz-8MIgiw-t240x240.jpg",
+            path: "id_37",
+            id: 37
+        },
+        {
+            name: "THE NIGHT REMIX",
+            author: "TVT FT NEVER",
+            image: "https://i1.sndcdn.com/artworks-000217774120-m1mqsj-t240x240.jpg",
+            path: "id_38",
+            id: 38
+        },
+        {
+            name: "Nevada",
+            author: "Vicetone Lofi Mix",
+            image: "https://i1.sndcdn.com/artworks-000174788935-d1hrl9-t500x500.jpg",
+            path: "id_39",
+            id: 39
+        },
+        {
+            name: "You x Ngau Hung Be Your Sun",
+            author: "DJ版",
+            image: "https://i1.sndcdn.com/artworks-000234241861-h5pc3v-t500x500.jpg",
+            path: "id_40",
+            id: 40
+        },
+        {
+            name: "Mạc Vấn Quy Kỳ",
+            author: " DJ弹鼓版",
+            image: "https://i1.sndcdn.com/artworks-tQwFzp8Y09SzFSXi-DSxKFg-t500x500.jpg",
+            path: "id_41",
+            id: 41
+        },
+        {
+            name: "Mạc Vấn Quy Kỳ",
+            author: "Tưởng Tuyết Nhi",
+            image: "https://i1.sndcdn.com/artworks-000672249628-gkn1b9-t240x240.jpg",
+            path: "id_42",
+            id: 42
+        },
+        {
+            name: "Tie Me Down Remix",
+            author: "Griffin - || 4GET SAUCY X CH",
+            image: "https://i1.sndcdn.com/artworks-mdOUOjfnsaLl-0-t500x500.jpg",
+            path: "id_43",
+            id: 43
+        },
+        {
+            name: "Tie Me Down x Fade",
+            author: "Griffin - || 4GET SAUCY X CH",
+            image: "https://i1.sndcdn.com/artworks-000446531922-qq76kd-t500x500.jpg",
+            path: "id_44",
+            id: 44
+        },
+        {
+            name: "Demons",
+            author: "Jar Of Heart",
+            image: "https://i1.sndcdn.com/artworks-ZW0KnQ6U7YKd-0-t500x500.jpg",
+            path: "id_45",
+            id: 45
+        },
+        {
+            name: "Can We Kiss Forever?",
+            author: "Kina",
+            image: "https://i1.sndcdn.com/artworks-000483921816-nx3ypm-t500x500.jpg",
+            path: "id_46",
+            id: 46
+        },
+        {
+            id: 47,
+            name: "Khúc Cửu Môn Hồi Ức - Đẳng Thập Ma Quân",
+            author: "辞九门回忆",
+            image: "https://i1.sndcdn.com/artworks-okGdzJU5zoepc4rV-Wem4BQ-t500x500.jpg",
+            path: "id_47"
+        },
     ],
 
     renderMusic() {
