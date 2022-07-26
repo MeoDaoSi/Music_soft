@@ -31,11 +31,14 @@ const volBtn = $('.vol');
 const volBarRange = $('.volume-bar__range');
 
 app = {
+    arrIndex: [],
     currentIndex: 0,
     isPlaying: false,
     isRepeat: false,
     isLove: false,
     isVolume: false,
+    isRandom: false,
+    isSetting: 0,
     songs: [
         {
             id: 1,
@@ -435,17 +438,51 @@ app = {
             _this.scrollActiveSong();
         }
         audio.onended = function () {
-            if (_this.isRepeat) {
-                audio.play();
-                _this.scrollActiveSong();
-            } else {
-                nextBtn.click();
-                _this.scrollActiveSong();
+            let getText = repeatBtn.innerText;
+            switch(getText){
+                case 'repeat':{
+                    nextBtn.click();
+                    _this.scrollActiveSong();
+                    break;
+                }
+                case 'repeat_one':{
+                    audio.play();
+                    break;
+                }
+                case 'shuffle':{
+                    _this.getIndexRandom();
+                    _this.loadCurrentSong();
+                    audio.play();
+                    _this.scrollActiveSong();
+                    break;
+                }
             }
+            // if (_this.isRepeat) {
+            //     audio.play();
+            //     _this.scrollActiveSong();
+            // } else {
+            //     nextBtn.click();
+            //     _this.scrollActiveSong();
+            // }
         }
         repeatBtn.onclick = function () {
-            _this.isRepeat = !_this.isRepeat;
-            repeatBtn.classList.toggle('active', _this.isRepeat);
+            let getText = repeatBtn.innerText
+            switch (getText) {
+                case 'repeat':
+                    repeatBtn.innerText = 'repeat_one'
+                    repeatBtn.classList.add('active');
+                    break
+                case 'repeat_one':
+                    repeatBtn.innerText = 'shuffle'
+                    break
+                case 'shuffle':
+                    repeatBtn.innerText = 'repeat'
+                    repeatBtn.classList.remove('active');
+                    break
+            }
+            // _this.isRepeat = !_this.isRepeat;
+            // repeatBtn.classList.toggle('active', _this.isRepeat);
+            // repeatBtn.innerText = "repeat_one";
         }
         volBtn.onclick = function () {
             _this.isVolume = !_this.isVolume;
@@ -550,6 +587,19 @@ app = {
                 return
             }
         })
+    },
+    getIndexRandom(){
+        if ( this.arrIndex.length == this.songs.length ){
+            this.arrIndex.length = 0;
+        }
+        do{
+            this.currentIndex = Math.floor(Math.random() * this.songs.length )
+            if ( !this.arrIndex.includes(this.currentIndex)){
+                break;
+            }
+        }
+        while(true);
+        this.arrIndex.push(this.currentIndex);
     },
     scrollActiveSong() {
         setTimeout(function () {

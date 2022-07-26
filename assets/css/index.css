@@ -632,6 +632,9 @@ i.play, i.pause {
     color: var(--primary-color);
     cursor: pointer;
 }
+.ri-shuffle-line:before { 
+    content: "\f124"; 
+}
 
 .vol {
     z-index: 1;
